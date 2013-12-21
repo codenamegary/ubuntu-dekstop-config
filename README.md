@@ -61,3 +61,21 @@ wget https://raw.github.com/codenamegary/ubuntu-php-webdev-installer/master/inst
   * Chromium Web Browser - Dare to be different.
   * Gimp - For expropriating pieces of the amazing mockups the client's print shop sent over which all contain a million layers and are designed to go on a 3"x5" post card.
 
+## FAQ
+
+* Why do I have to install all the Ubuntu updates? Why can't I just run the script?
+  * Because. Just trust me. Or don't. Just try it out!
+* What versions of Ubuntu Desktop does this work with?
+  * Hell if I know. I've tested it thoroughly with Vanilla installs of 12.04 LTS. It might work with others.
+* Why haven't you installed dev tool "X"?
+  * Possibly because I don't know of dev tool "X" or have not had to use it previously. Possibly because dev tool "X" is a pile of crap. Possibly because it's not available in any convenient PPA or deb package.
+* Can you add dev tool "X"?
+  * Probably, just open an issue.
+* Does this dev environment work with any other environments?
+  * I got you dawg. This Aptana is the business for PHP, Rails, general HTML / JS and other web dev tasks. Eclipse itself... well Java.
+* How many PHP developers does it take to change a light bulb?
+  * One.
+  * And another 100 to tell everyone how much better their solution is
+  * 43 to flame the inconsistent syntax of the change_light command 
+  * 5 Rails developers to troll the OP with their change.light syntax
+  * 1 guy who manages to do the same job in a single tweet using NodeJS
