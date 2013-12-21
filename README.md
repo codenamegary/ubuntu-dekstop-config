@@ -6,6 +6,28 @@ This script can be run on Ubuntu Desktop 12.04 to automatically install all of t
 
 ## How-To
 
+If you're already familiar with installing Ubuntu just skip to step 3.
+
+### Step 1 - Install Ubuntu
+
+* Good instructions for creating a bootable USB installer on Windows can be found here - http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows
+* Note that the Pen Drive Linux USB Installer can automagically download the ISO image for you, no need to download it in advance
+
+### Step 2 - Apply Updates
+
+* Boot your new Ubuntu install, wait a few minutes, software updates should popup, install them
+  * Note: If software update prompt does not show up, ensure you are connected to a network and stop being so impatient
+* Reboot
+* Wait for a few minutes and install additional drivers for video etc. if prompted
+  * Note: If not prompted, go into system settings and click on the "additional drivers" icon
+* Reboot
+* Potentially experience video driver issues
+* Possibly Google and muck around with Video drivers for an hour and wonder why you're doing this
+* Contemplate going back to Windows
+* Fix video driver issues, feel better
+
+### Step 3 - Run The Script
+
 Copy and paste the following command inside a terminal.
 
 ```
