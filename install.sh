@@ -150,6 +150,10 @@ else
     sudo apt-get -y install php5-mysql > /dev/null
     echo " -| xdebug..."
     sudo apt-get -y install php5-xdebug > /dev/null
+    echo " -| imagick..."
+    sudo apt-get -y install php5-imagick > /dev/null
+    echo " -| geoip..."
+    sudo apt-get -y install php5-geoip > /dev/null
     echo " -| Replacing default index.html in favour of a phpinfo page..."
     sudo wget --quiet "https://raw.github.com/codenamegary/ubuntu-php-webdev-installer/master/index.php" -P /var/www > /dev/null
     echo " -| Downloading composer..."
