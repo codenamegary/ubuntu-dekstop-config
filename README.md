@@ -4,7 +4,7 @@ This script can be run on Ubuntu Desktop 12.04 to automatically install all of t
 
 ![screenshot](https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.plugin/screenshot/screenshot-ubuntu_v0.8.2.png)
 
-Running this script...
+## How-To
 
 Copy and paste the following command inside a terminal.
 
@@ -12,7 +12,7 @@ Copy and paste the following command inside a terminal.
 wget https://raw.github.com/codenamegary/ubuntu-php-webdev-installer/master/install.sh -P ~/ && chmod +x ~/install.sh && ~/install.sh
 ```
 
-Once the script has been executed you will have...
+## What You Get
 
 * Eclipse
   * Aptana Studio 3 PHP Plugin - http://www.aptana.com/products/studio3
