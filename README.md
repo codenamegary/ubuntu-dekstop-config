@@ -30,11 +30,12 @@ wget https://raw.github.com/codenamegary/ubuntu-php-webdev-installer/master/inst
   * Rewrite and other common mods enabled
   * From https://sury.org/ - ppa:ondrej/php5-oldstable
 * Various dev tools
-  * NodeJS / NPM - Latest from PPA, grunt-cli installed globally
-  * MySQL Workbench 6.0.8
-  * Git
-  * OpenJDK 7
-  * CURL
-  * Build Essentials
-  * Chromium Web Browser
+  * NodeJS / NPM - Latest from PPA, grunt-cli installed globally, because your front end guys think they are Twitter Bootstrap and need a billion node modules to compile 200 lines of JavaScript and 1 stylesheet.
+  * MySQL Workbench 6.0.8 - For doing architecty and diagramy things with models and also editing the database manually because the POS framework used in the horrid project you just inherited has no support for any type of migration or other sane method of controlling schema changes.
+  * Git - To put your code somewhere safe, the douchebag that worked here before you got fired because he stored everything in a zip file on a server in the janitor's closet and it exploded. Don't be that guy.
+  * OpenJDK 7 - Because Java.
+  * CURL - Looking at web pages on command line is t3h fun!
+  * Build Essentials - When I'm bored, I like to compile things and pretend I'm a real programmer.
+  * Chromium Web Browser - Dare to be different.
+  * Gimp - For expropriating pieces of the amazing mockups the client's print shop sent over which all contain a million layers and are designed to go on a 3"x5" post card.
 

@@ -163,6 +163,15 @@ else
     echo "  --------------------------------------"
 fi
 
+# GIMP
+echo "| Gimp..."
+if [ -f /usr/bin/gimp ]
+then
+    echo " -| Already installed, skipping..."
+else
+    sudo apt-get -y install gimp > /dev/null
+fi
+
 echo 
 echo "--------------------------------------"
 echo "| All done! Launching http://localhost"
