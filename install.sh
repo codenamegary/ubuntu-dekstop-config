@@ -66,13 +66,7 @@ else
     -repository \
     http://preview.appcelerator.com/aptana/studio3/plugin/update/rc \
     -installIUs \
-    com.aptana.feature.studio.feature.group,\
-    com.aptana.php.feature.feature.group,\
-    com.aptana.pydev.feature.feature.group,\
-    org.radrails.rails.feature.group,\
-    com.aptana.feature.feature.group,\
-    com.aptana.ide.feature.libraries.subscription.feature.group,\
-    com.aptana.webkitbrowser.feature.group > /dev/null
+    com.aptana.feature.studio.feature.group > /dev/null
     echo " | Installing Eclipse Monrise Dark Theme...."
     /opt/eclipse/eclipse \
     -application org.eclipse.equinox.p2.director \
@@ -110,6 +104,9 @@ if [ -f /usr/bin/mysqlbinlog ]
 then
     echo " -| Already installed, skipping..."
 else
+	echo " -| Installing..."
+	sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password 123mysql'
+	sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password 123mysql'
     sudo apt-get -y install mysql-server > /dev/null
 fi
 
@@ -179,6 +176,8 @@ fi
 echo 
 echo "--------------------------------------"
 echo "| All done! Launching http://localhost"
+echo "|"
+echo "| MySQL root password is 123mysql"
 echo "--------------------------------------"
 
 firefox http://localhost
