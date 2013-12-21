@@ -106,7 +106,7 @@ fi
 
 # MySQL Server
 echo "| MySQL Server..."
-if [ -f /usr/bin/mysql ]
+if [ -f /usr/bin/mysqlbinlog ]
 then
     echo " -| Already installed, skipping..."
 else
