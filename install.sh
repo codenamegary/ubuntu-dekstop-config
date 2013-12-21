@@ -1,3 +1,4 @@
+#!/bin/bash
 # Install script for various standard web dev things.
 
 # chmod +x and then run
@@ -126,7 +127,10 @@ else
     sudo apt-get update > /dev/null
     echo " -| Installing..."
     sudo apt-get -y install nodejs > /dev/null
+    echo " -| Installing nodejs module grunt-cli globally..."
+    sudo npm install -g grunt-cli > /dev/null
 fi
+
 
 # PHP 5.4 / Apache2 PPA for Ubuntu 12.04 LTS
 echo "| PHP 5.4 old-stable PPA repos..."
@@ -148,6 +152,10 @@ else
     sudo apt-get -y install php5-xdebug > /dev/null
     echo " -| Replacing default index.html in favour of a phpinfo page..."
     sudo wget --quiet "https://raw.github.com/codenamegary/ubuntu-php-webdev-installer/master/index.php" -P /var/www > /dev/null
+    echo " -| Downloading composer..."
+    curl -sS https://getcomposer.org/installer | php > /dev/null
+    echo " -| Installing composer in /usr/bin..."
+    sudo mv composer.phar /usr/bin/composer > /dev/null
     sudo rm /var/www/index.html
     echo " -| Dat php..."
     echo "  --------------------------------------"
