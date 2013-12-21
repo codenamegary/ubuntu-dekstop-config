@@ -78,4 +78,4 @@ wget https://raw.github.com/codenamegary/ubuntu-php-webdev-installer/master/inst
   * And another 100 to tell everyone how much better their solution is
   * 43 to flame the inconsistent syntax of the change_light command 
   * 5 Rails developers to troll the OP with their change.light syntax
-  * 1 guy who manages to do the same job in a single tweet using NodeJS
+  * 1 guy who manages to do the same job in a single tweet using Haskell
