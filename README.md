@@ -73,6 +73,8 @@ wget https://raw.github.com/codenamegary/ubuntu-php-webdev-installer/master/inst
   * Probably, just open an issue.
 * Does this dev environment work with any other languages?
   * I got you dawg. This Aptana is the business for PHP, Rails, general HTML / JS and other web dev tasks. Eclipse itself... well Java.
+* There are a bunch of erros during the mysql workbench install.
+  * Yes, just ignore them, they will go away and everything will be fine.
 * How many PHP developers does it take to change a light bulb?
   * One.
   * And another 100 to tell everyone how much better their solution is
