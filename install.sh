@@ -200,6 +200,16 @@ else
     sudo apt-get -y install pipelight > /dev/null
 fi
 
+# RVM stable with Ruby
+echo "| RVM - stable, with Ruby..."
+if [ -f !~/.rvm/scripts/rvm ]
+then
+    echo " -| Already installed, skipping..."
+else
+    \curl -sSL https://get.rvm.io | bash -s stable --ruby > /dev/null
+    source /home/test/.rvm/scripts/rvm > /dev/null
+fi
+
 echo 
 echo "--------------------------------------"
 echo "| All done! Launching http://localhost"
