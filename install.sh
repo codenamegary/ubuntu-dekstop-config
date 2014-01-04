@@ -171,7 +171,6 @@ then
     echo " -| Already installed, skipping..."
 else
     sudo apt-get -y install redis-server > /dev/null
-    echo "  --------------------------------------"
 fi
 
 # GIMP
@@ -186,7 +185,19 @@ else
     echo " -| Plugins directory..."
     sudo apt-get -y install gimp-plugin-registry > /dev/null
     echo " -| Filter set..."
-    sudo apt-get -y install gimp-gmic
+    sudo apt-get -y install gimp-gmic > /dev/null
+fi
+
+# Pipelight for Netflix / other support
+echo "| Pipelight plugins for Netflix / other support..."
+if [ -f /usr/bin/pipelight-plugin ]
+then
+    echo " -| Already installed, skipping..."
+else
+    sudo apt-add-repository -y ppa:ehoover/compholio > /dev/null
+    sudo apt-add-repository -y ppa:mqchael/pipelight > /dev/null
+    sudo apt-get update > /dev/null
+    sudo apt-get -y install pipelight > /dev/null
 fi
 
 echo 
