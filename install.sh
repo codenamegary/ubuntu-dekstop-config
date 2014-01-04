@@ -164,13 +164,29 @@ else
     echo "  --------------------------------------"
 fi
 
+# REDIS Server from PPA
+echo "| Reids Server"
+if [ -f /usr/bin/redis-server ]
+then
+    echo " -| Already installed, skipping..."
+else
+    sudo apt-get -y install redis-server > /dev/null
+    echo "  --------------------------------------"
+fi
+
 # GIMP
-echo "| Gimp..."
+echo "| Gimp 2.8.6..."
 if [ -f /usr/bin/gimp ]
 then
     echo " -| Already installed, skipping..."
 else
+    sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp > /dev/null
+    sudo apt-get update > /dev/null
     sudo apt-get -y install gimp > /dev/null
+    echo " -| Plugins directory..."
+    sudo apt-get -y install gimp-plugin-registry > /dev/null
+    echo " -| Filter set..."
+    sudo apt-get -y install gimp-gmic
 fi
 
 echo 
