@@ -165,7 +165,7 @@ else
 fi
 
 # REDIS Server from PPA
-echo "| Reids Server"
+echo "| Redis Server"
 if [ -f /usr/bin/redis-server ]
 then
     echo " -| Already installed, skipping..."
@@ -202,12 +202,12 @@ fi
 
 # RVM stable with Ruby
 echo "| RVM - stable, with Ruby..."
-if [ -f !~/.rvm/scripts/rvm ]
+if [ -f ~/.rvm/scripts/rvm ]
 then
     echo " -| Already installed, skipping..."
 else
-    \curl -sSL https://get.rvm.io | bash -s stable --ruby > /dev/null
-    source /home/test/.rvm/scripts/rvm > /dev/null
+    \curl -sSL https://get.rvm.io | bash -s stable --ruby
+    source ~/.rvm/scripts/rvm > /dev/null
 fi
 
 echo 
